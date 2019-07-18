@@ -1,0 +1,338 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:translate_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:translate"/>
+      <Option name="component_description" type="QString" value="Translate (convert format)"/>
+      <Option name="component_pos_x" type="double" value="677.2449760743992"/>
+      <Option name="component_pos_y" type="double" value="509.1863524847936"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:translate_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="RED_tif" type="Map">
+          <Option name="child_id" type="QString" value="gdal:translate_1"/>
+          <Option name="component_description" type="QString" value="RED_tif"/>
+          <Option name="component_pos_x" type="double" value="877.2449760743992"/>
+          <Option name="component_pos_y" type="double" value="554.1863524847936"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="RED_tif"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="saga:splitrgbbands_1"/>
+            <Option name="output_name" type="QString" value="R"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:translate_2" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:translate"/>
+      <Option name="component_description" type="QString" value="Translate (convert format)"/>
+      <Option name="component_pos_x" type="double" value="670.2788049365668"/>
+      <Option name="component_pos_y" type="double" value="204.55891137018466"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:translate_2"/>
+      <Option name="outputs" type="Map">
+        <Option name="GREEN_tif" type="Map">
+          <Option name="child_id" type="QString" value="gdal:translate_2"/>
+          <Option name="component_description" type="QString" value="GREEN_tif"/>
+          <Option name="component_pos_x" type="double" value="870.2788049365668"/>
+          <Option name="component_pos_y" type="double" value="249.55891137018466"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="GREEN_tif"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="saga:splitrgbbands_1"/>
+            <Option name="output_name" type="QString" value="G"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="gdal:translate_3" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:translate"/>
+      <Option name="component_description" type="QString" value="Translate (convert format)"/>
+      <Option name="component_pos_x" type="double" value="680.509068465494"/>
+      <Option name="component_pos_y" type="double" value="347.37211831863885"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:translate_3"/>
+      <Option name="outputs" type="Map">
+        <Option name="NIR_tif" type="Map">
+          <Option name="child_id" type="QString" value="gdal:translate_3"/>
+          <Option name="component_description" type="QString" value="NIR_tif"/>
+          <Option name="component_pos_x" type="double" value="880.509068465494"/>
+          <Option name="component_pos_y" type="double" value="392.37211831863885"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="NIR_tif"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="saga:splitrgbbands_1"/>
+            <Option name="output_name" type="QString" value="B"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QgsCoordinateReferenceSystem">
+              <spatialrefsys>
+                <proj4>+proj=utm +zone=32 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>2105</srsid>
+                <srid>25832</srid>
+                <authid>EPSG:25832</authid>
+                <description>ETRS89 / UTM zone 32N</description>
+                <projectionacronym>utm</projectionacronym>
+                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+              </spatialrefsys>
+            </Option>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:splitrgbbands_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="saga:splitrgbbands"/>
+      <Option name="component_description" type="QString" value="Split RGB bands"/>
+      <Option name="component_pos_x" type="double" value="232.3545052191509"/>
+      <Option name="component_pos_y" type="double" value="399.750251490173"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="saga:splitrgbbands_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="GREEN_sdat" type="Map">
+          <Option name="child_id" type="QString" value="saga:splitrgbbands_1"/>
+          <Option name="component_description" type="QString" value="GREEN_sdat"/>
+          <Option name="component_pos_x" type="double" value="465.02117188581764"/>
+          <Option name="component_pos_y" type="double" value="260.08358482350627"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="GREEN_sdat"/>
+          <Option name="output_name" type="QString" value="G"/>
+        </Option>
+        <Option name="NIR_sdat" type="Map">
+          <Option name="child_id" type="QString" value="saga:splitrgbbands_1"/>
+          <Option name="component_description" type="QString" value="NIR_sdat"/>
+          <Option name="component_pos_x" type="double" value="457.68783855248415"/>
+          <Option name="component_pos_y" type="double" value="372.08358482350627"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="NIR_sdat"/>
+          <Option name="output_name" type="QString" value="B"/>
+        </Option>
+        <Option name="RED_sdat" type="Map">
+          <Option name="child_id" type="QString" value="saga:splitrgbbands_1"/>
+          <Option name="component_description" type="QString" value="RED_sdat"/>
+          <Option name="component_pos_x" type="double" value="451.0211718858177"/>
+          <Option name="component_pos_y" type="double" value="453.41691815683987"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="RED_sdat"/>
+          <Option name="output_name" type="QString" value="R"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputimage"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="Split_bands"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="gdal:translate_1:RED_tif" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="RED_tif"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:translate_1:RED_tif"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="gdal:translate_2:GREEN_tif" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="GREEN_tif"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:translate_2:GREEN_tif"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="gdal:translate_3:NIR_tif" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="NIR_tif"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:translate_3:NIR_tif"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="inputimage" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="INPUT_IMAGE"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputimage"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="saga:splitrgbbands_1:GREEN_sdat" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="GREEN_sdat"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="saga:splitrgbbands_1:GREEN_sdat"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="saga:splitrgbbands_1:NIR_sdat" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="NIR_sdat"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="saga:splitrgbbands_1:NIR_sdat"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="saga:splitrgbbands_1:RED_sdat" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="RED_sdat"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="saga:splitrgbbands_1:RED_sdat"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputimage" type="Map">
+      <Option name="component_description" type="QString" value="inputimage"/>
+      <Option name="component_pos_x" type="double" value="220.85792391752454"/>
+      <Option name="component_pos_y" type="double" value="287.2335391141946"/>
+      <Option name="name" type="QString" value="inputimage"/>
+    </Option>
+  </Option>
+</Option>

@@ -1,0 +1,177 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:translate_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="gdal:translate"/>
+      <Option name="component_description" type="QString" value="Translate (convert format)"/>
+      <Option name="component_pos_x" type="double" value="605.1472106696827"/>
+      <Option name="component_pos_y" type="double" value="404.7825112669212"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="gdal:translate_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="OUTPUT_KMEANS_TIF" type="Map">
+          <Option name="child_id" type="QString" value="gdal:translate_1"/>
+          <Option name="component_description" type="QString" value="OUTPUT_KMEANS_TIF"/>
+          <Option name="component_pos_x" type="double" value="611.8549102936363"/>
+          <Option name="component_pos_y" type="double" value="482.8239301346212"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="OUTPUT_KMEANS_TIF"/>
+          <Option name="output_name" type="QString" value="OUTPUT"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="COPY_SUBDATASETS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" type="QString" value="saga:kmeansclusteringforgrids_1"/>
+            <Option name="output_name" type="QString" value="CLUSTER"/>
+            <Option name="source" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="QString" value=""/>
+          </Option>
+        </Option>
+        <Option name="TARGET_CRS" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="saga:kmeansclusteringforgrids_1" type="Map">
+      <Option name="active" type="bool" value="true"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" type="QString" value="saga:kmeansclusteringforgrids"/>
+      <Option name="component_description" type="QString" value="K-means clustering for grids"/>
+      <Option name="component_pos_x" type="double" value="341.00898946196196"/>
+      <Option name="component_pos_y" type="double" value="408.1584132876416"/>
+      <Option name="dependencies"/>
+      <Option name="id" type="QString" value="saga:kmeansclusteringforgrids_1"/>
+      <Option name="outputs" type="Map">
+        <Option name="OUTPUT_KMEANS_SDAT" type="Map">
+          <Option name="child_id" type="QString" value="saga:kmeansclusteringforgrids_1"/>
+          <Option name="component_description" type="QString" value="OUTPUT_KMEANS_SDAT"/>
+          <Option name="component_pos_x" type="double" value="592.7952796342557"/>
+          <Option name="component_pos_y" type="double" value="317.0151253682591"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" type="bool" value="false"/>
+          <Option name="name" type="QString" value="OUTPUT_KMEANS_SDAT"/>
+          <Option name="output_name" type="QString" value="CLUSTER"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" type="bool" value="true"/>
+      <Option name="parameters_collapsed" type="bool" value="true"/>
+      <Option name="params" type="Map">
+        <Option name="GRIDS" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" type="QString" value="inputndvi"/>
+            <Option name="source" type="int" value="0"/>
+          </Option>
+        </Option>
+        <Option name="MAXITER" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="100"/>
+          </Option>
+        </Option>
+        <Option name="METHOD" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="1"/>
+          </Option>
+        </Option>
+        <Option name="NCLUSTER" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="int" value="8"/>
+          </Option>
+        </Option>
+        <Option name="NORMALISE" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="OLDVERSION" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="false"/>
+          </Option>
+        </Option>
+        <Option name="UPDATEVIEW" type="List">
+          <Option type="Map">
+            <Option name="source" type="int" value="2"/>
+            <Option name="static_value" type="bool" value="true"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option name="model_group" type="QString" value=""/>
+  <Option name="model_name" type="QString" value="kmeans_unsupervised"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="gdal:translate_1:OUTPUT_KMEANS_TIF" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="OUTPUT_KMEANS_TIF"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="gdal:translate_1:OUTPUT_KMEANS_TIF"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+    <Option name="inputndvi" type="Map">
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="INPUT_NDVI"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="inputndvi"/>
+      <Option name="parameter_type" type="QString" value="raster"/>
+    </Option>
+    <Option name="saga:kmeansclusteringforgrids_1:OUTPUT_KMEANS_SDAT" type="Map">
+      <Option name="create_by_default" type="bool" value="true"/>
+      <Option name="default" type="invalid"/>
+      <Option name="description" type="QString" value="OUTPUT_KMEANS_SDAT"/>
+      <Option name="flags" type="int" value="0"/>
+      <Option name="metadata"/>
+      <Option name="name" type="QString" value="saga:kmeansclusteringforgrids_1:OUTPUT_KMEANS_SDAT"/>
+      <Option name="parameter_type" type="QString" value="rasterDestination"/>
+      <Option name="supports_non_file_outputs" type="bool" value="false"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="inputndvi" type="Map">
+      <Option name="component_description" type="QString" value="inputndvi"/>
+      <Option name="component_pos_x" type="double" value="107.4943855186942"/>
+      <Option name="component_pos_y" type="double" value="409.7904434926355"/>
+      <Option name="name" type="QString" value="inputndvi"/>
+    </Option>
+  </Option>
+</Option>
